@@ -40,7 +40,7 @@ d. Common Table Expressions (CTEs) to structure the analysis in clear, reusable 
 e. Filtering and grouping to ensure enough data is used for each job and level
 
 
-<img width="1880" height="552" alt="image" src="https://github.com/user-attachments/assets/8780a575-a5aa-4fea-8637-127922e029bb" />
+<img width="2240" height="638" alt="image" src="https://github.com/user-attachments/assets/40375cd0-cbbe-41d2-b556-5793cfbe5134" />
 
 Key Insights:
 a. Roles like Data Specialist, Engineer, and Research Engineer offer some of the strongest salary growth potential as you gain experience, with average pay jumps of 40% or more when moving up a level.
