@@ -146,7 +146,7 @@ Part B - Tableau visualization:
 1. Salary Evolution by Experience Level
    Quick look at average salary trends by experience level from 2020–2025:
 
-   
+   <img width="2250" height="1256" alt="image" src="https://github.com/user-attachments/assets/1b598628-e62a-4942-88b4-4f84c8040507" />
 
 a. More experience = more money, no surprises here. Executives/Directors are way ahead, and the gap stays pretty big.
 b. All experience levels saw steady growth in salaries over time, with a bit of a dip around 2021, then a strong recovery.
@@ -156,14 +156,17 @@ d. In general, the market seems to be paying more across the board compared to 2
 2. Global Salary Landscape
 Quick breakdown of how pay looks for full-time roles in different countries:
 
+<img width="2266" height="1292" alt="image" src="https://github.com/user-attachments/assets/3cd29267-6ea2-409c-b932-c6f000d853db" />
+
 a. Top-paying countries (darker blue) like the United States, Canada, Australia, and some Western European countries show average salaries ranging from about $120,000 up to $164,000.
 b. Countries on the lower end of the scale (more orange) such as India and Brazil have average salaries closer to 35,000 to 45,000.
 c. Big gap between regions, with countries like Germany, the UK, and the Netherlands also showing strong averages above $100,000.
 d. Only countries with at least 50 records are shown, to keep the data quality reasonable.
 
-
 3. Salary Distribution by Top Job Titles
 This box and whisker plot is sorted by job titles, with the highest-paying roles at the top.
+
+<img width="1926" height="1056" alt="image" src="https://github.com/user-attachments/assets/e3227fb2-6df8-4d10-aa8d-7f2e95d285fb" />
 
 a. Machine Learning Engineer, Research Engineer, and Software Engineer have the highest median salaries, all above $170,000.
  For these top roles:
@@ -175,12 +178,20 @@ c. The plot makes it clear that technical engineering and research positions com
 
 4. Salary Based on Remote Work and Company Size
    Quick table shows color-coded salary distribution
-   
+
+   <img width="1322" height="318" alt="image" src="https://github.com/user-attachments/assets/91bb6bd1-09aa-4a3a-867f-9fa36379f261" />
+
 a. On-site roles at large companies offer the highest average salaries overall.
 b. Hybrid work arrangements pay the least across all company sizes.
 c. Fully remote roles tend to offer pay that is higher than hybrid but usually not as high as on-site roles, unless the company is mid-sized, where remote pay gets very close to on-site.
 d. The size of the company matters: larger companies consistently pay more, whether the role is on-site, hybrid, or remote.
 
-Full Dashboard is available at Tableau Public: 
+
+Full Dashboard is available at Tableau Public: https://public.tableau.com/app/profile/daniel.ang8549/viz/MlAIJobTableau/Dashboard1
+
+<img width="2960" height="1400" alt="image" src="https://github.com/user-attachments/assets/44a3064e-30a2-4619-ad27-b9d4f22ac3f5" />
+
+
+
 
 
