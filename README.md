@@ -10,8 +10,15 @@ This project takes in real data about Data Science, Machine Learning and AI rela
 Dataset source was taken from Kaggle:
 https://www.kaggle.com/datasets/adilshamim8/salaries-for-data-science-jobs/data
 
-It has about 142,000 records, with work_year, experience_level, employment_type, job_title, salary details, remote_ratio and company size as major columns.
+Dataset Overview
 
+<img width="1856" height="162" alt="image" src="https://github.com/user-attachments/assets/43681ba9-0463-4add-b323-74d74cc6231c" />
+
+The analysis is based on over 140,000 job records collected from 96 different countries.
+Data spans 6 years and covers 410 unique job titles in the ML, AI, and data science field.
+Salaries in the dataset range from 15,000 up to 800,000 per year.
+The average salary across all roles and countries is about $157,500 USD.
+This large and diverse dataset gives a broad view of global job trends and pay for AI and data-related positions.
 The dataset downloaded is already clean, so no data cleaning was conducted.
 
 Key Skill Demonstrated:
@@ -21,17 +28,9 @@ Tableau and SQL were used to conduct analysis about this project.
 - Data-driven storytelling
 - Business recommendations
 
-Key Results:
-
 Part A - SQL Business Intelligence Analysis
-1. Dataset Overview
-The analysis is based on over 140,000 job records collected from 96 different countries.
-Data spans 6 years and covers 410 unique job titles in the ML, AI, and data science field.
-Salaries in the dataset range from 15,000 up to 800,000 per year.
-The average salary across all roles and countries is about $157,500 USD.
-This large and diverse dataset gives a broad view of global job trends and pay for AI and data-related positions.
 
-2. Career Progression and Salary Growth
+1. Career Progression and Salary Growth
 This analysis explores how salaries change as people advance through different experience levels and job titles. To do this, I used a combination of advanced SQL skills, including:
 
 a. Window functions (LEAD() and PARTITION BY) to compare salaries across experience levels within the same job title
@@ -50,10 +49,104 @@ c. Even popular roles like Software Engineer and Data Engineer show moderate sal
 d. In general, moving up from entry or intermediate levels in this field can make a major difference in long-term earning potential.
 
 
+2. Remote Work Premium Analysis
+SQL Skills Demonstrated:
+
+a. Used window functions to compare salary averages for the same role by location and work setting (on-site vs remote)
+b. Employed conditional aggregation and pattern filtering to focus on Data Analyst positions in different countries
+c. Grouped and calculated percentage differences to identify where remote work delivers a salary premium or discount
+
+<img width="1570" height="566" alt="image" src="https://github.com/user-attachments/assets/5d2ce5bb-1d0d-4e17-8f0b-dfe0cc13ed72" />
+
+Key Insights:
+
+a. In the United States, remote Data Analyst roles pay significantly more than on-site roles, with remote salaries averaging over 70% higher in some cases.
+b. Similar but smaller remote premiums are seen in countries like the UK, Spain, and Canada, where remote positions can pay between 20% and 32% more than on-site roles.
+c. For other regions such as Germany, Austria, and some on-site roles within the US, the difference in pay between remote and on-site is small or negligible.
+d. Overall, the value of remote work for salary strongly depends on country and company, and in some markets, going remote may offer a notable increase in earning potential.
+
+3. Salary Planning for Top Roles (2026 Recruitment Budget)
+Hypothetical Context: "HR needs to plan recruitment budgets for 2026. They want to know the average salary expectations 
+for different experience levels in the top 5 most hired job titles."
+
+Query the following:
+- Top 5 job titles by hiring volume in 2025
+- Average salary by experience level for each of these titles and the salary range (min-max) to set realistic budget expectations
+
+SQL Techniques Used:
+
+a. Identified top 5 most-hired roles using grouping and sorting
+b. Applied joins and aggregations to provide detailed averages, min-max salary, and salary range by experience level and job title for the selected country
+c. Used CTEs for stepwise analysis and clearer, maintainable queries
+
+<img width="472" height="418" alt="image" src="https://github.com/user-attachments/assets/ab9dceaf-0db8-44b4-9d22-7971aef32445" />
+
+<img width="1664" height="640" alt="image" src="https://github.com/user-attachments/assets/d96b5b60-6f41-4854-be04-2c86391ae4c7" />
+
+Key Insights:
+
+a. The five most common hiring needs in 2025 were: Data Scientist, Software Engineer, Data Engineer, Data Analyst, and Engineer.
+b. Average salary expectations vary widely by both job title and experience level. For example, Executive / Director level (EX) Data Engineers and Data Scientists can command salaries well above 140,000 in the UK, while entry−level roles can be under 60,000.
+c. Salary ranges are broad within each title, reflecting both entry-level and highly specialized roles. For example, Data Scientist salaries in the UK ranged from under 30,000 up to nearly 720,000 depending on experience and other factors.
+d. Having this breakdown helps set realistic budget benchmarks not just for base salary, but for the likely spread HR can expect when hiring across different seniority levels.
+
+4. Talent Availability-to-Cost Ratio Analysis
+Hypothetical Context: "HR needs to plan recruitment budgets for 2026. They want to know the average salary expectations 
+for different experience levels in the top 5 most hired job titles."
+
+Create a report showing:
+
+a. Countries with at least 100 employees in the dataset
+b. Average salary by country
+c. Number of senior-level (SE, EX) professionals available
+d. Rank countries by value score: (senior talent count / average salary * 1000) 
+
+SQL Skills Demonstrated:
+a. Careful use of type casting (::numeric, ::float) to ensure accurate calculations involving division and rounding.
+b. Applied advanced calculations (e.g., type casting, logarithms, custom ratios) for nuanced business metrics.
+d. Construction of custom business metrics, such as the senior_pct (percentage of senior roles), normalized_count (logarithmic normalization), and a calculated value_score to compare talent value across geographies.
+
+<img width="1796" height="884" alt="image" src="https://github.com/user-attachments/assets/db7626cc-9a07-471b-9fb3-83d8f6bbbce5" />
+
+Key Insights:
+a. Slovakia, Lithuania, and India provide the most cost-effective access to senior ML/AI talent based on the value score.
+b. High-salary countries like the US and UK have abundant senior talent, but lower cost-effectiveness.
+c. Central/Eastern European countries have a high proportion of senior professionals relative to their workforce and salary levels.
+
+
+5. Cost Center Analysis
+Hypothetical Context: "Finance wants to understand salary distribution across company sizes to optimize hiring strategies."
+
+Provide:
+
+a. Median salaries by company size (S, M, L) and employment type
+b. The 25th and 75th percentile salaries for each group
+c. Count of employees in each category
+d. Focus on 2024-2025 data only
+
+SQL Skills Demonstrated:
+a. Used window functions (ROW_NUMBER, COUNT OVER) for ranking and grouping by company size and employment type.
+b. Calculated salary percentiles (25th, median, 75th) using row-based logic for robust distribution insights.
+c. Applied conditional aggregation and careful data filtering for recent years (2024–2025).
+
+<img width="1872" height="836" alt="image" src="https://github.com/user-attachments/assets/5c173590-2a37-447f-8c11-633dd81199d0" />
+
+Key Insights
+
+a. Median full-time salaries increase with company size: large companies offer the highest median and upper-range salaries.
+b. Contract and part-time roles show wide variability; smaller sample sizes in these groups require cautious interpretation.
+c. Most employee data is concentrated in medium and large full-time positions, informing where salary strategy may have the biggest impact.
+
+Source code for SQL can be found in this folder: 
+
+(A quick summary of SQL section and bring to the next part: Tableau)
+
 
 Part B - Tableau visualization:
 1. Salary Evolution by Experience Level
    Quick look at average salary trends by experience level from 2020–2025:
+
+   
 
 a. More experience = more money, no surprises here. Executives/Directors are way ahead, and the gap stays pretty big.
 b. All experience levels saw steady growth in salaries over time, with a bit of a dip around 2021, then a strong recovery.
@@ -88,6 +181,6 @@ b. Hybrid work arrangements pay the least across all company sizes.
 c. Fully remote roles tend to offer pay that is higher than hybrid but usually not as high as on-site roles, unless the company is mid-sized, where remote pay gets very close to on-site.
 d. The size of the company matters: larger companies consistently pay more, whether the role is on-site, hybrid, or remote.
 
-
+Full Dashboard is available at Tableau Public: 
 
 
