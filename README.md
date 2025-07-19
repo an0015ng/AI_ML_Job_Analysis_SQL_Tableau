@@ -22,7 +22,36 @@ Tableau and SQL were used to conduct analysis about this project.
 - Business recommendations
 
 Key Results:
-Part A - Tableau visualization:
+
+Part A - SQL Business Intelligence Analysis
+1. Dataset Overview
+The analysis is based on over 140,000 job records collected from 96 different countries.
+Data spans 6 years and covers 410 unique job titles in the ML, AI, and data science field.
+Salaries in the dataset range from 15,000 up to 800,000 per year.
+The average salary across all roles and countries is about $157,500 USD.
+This large and diverse dataset gives a broad view of global job trends and pay for AI and data-related positions.
+
+2. Career Progression and Salary Growth
+This analysis explores how salaries change as people advance through different experience levels and job titles. To do this, I used a combination of advanced SQL skills, including:
+
+a. Window functions (LEAD() and PARTITION BY) to compare salaries across experience levels within the same job title
+b. Conditional logic (CASE) for custom ordering of experience levels
+c. Aggregations (AVG, COUNT, ROUND) to calculate typical salaries and growth percentages
+d. Common Table Expressions (CTEs) to structure the analysis in clear, reusable steps
+e. Filtering and grouping to ensure enough data is used for each job and level
+
+
+<img width="1880" height="552" alt="image" src="https://github.com/user-attachments/assets/8780a575-a5aa-4fea-8637-127922e029bb" />
+
+Key Insights:
+a. Roles like Data Specialist, Engineer, and Research Engineer offer some of the strongest salary growth potential as you gain experience, with average pay jumps of 40% or more when moving up a level.
+b. Technical roles in engineering and research reward career progression with especially large salary increases.
+c. Even popular roles like Software Engineer and Data Engineer show moderate salary growth for those advancing in their careers.
+d. In general, moving up from entry or intermediate levels in this field can make a major difference in long-term earning potential.
+
+
+
+Part B - Tableau visualization:
 1. Salary Evolution by Experience Level
    Quick look at average salary trends by experience level from 2020–2025:
 
@@ -59,8 +88,6 @@ b. Hybrid work arrangements pay the least across all company sizes.
 c. Fully remote roles tend to offer pay that is higher than hybrid but usually not as high as on-site roles, unless the company is mid-sized, where remote pay gets very close to on-site.
 d. The size of the company matters: larger companies consistently pay more, whether the role is on-site, hybrid, or remote.
 
-
-Part B - SQL Business Intelligence Analysis
 
 
 
