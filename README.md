@@ -1,5 +1,102 @@
 # MLAIJobAnalysis
-ML AI Related Job Salary Analysis 2025 Using SQL &amp; Tableau
+## ML & AI Job Salary Analysis 2025 | PostgreSQL & Tableau
+
+---
+
+## Executive Summary
+
+This project analyzes **140,000+ job records across 96 countries** to uncover actionable salary insights for ML/AI roles from 2020-2025. Key findings reveal that **remote work commands a 70% salary premium** in the US, **career progression offers 40%+ growth potential** for technical roles, and **Eastern European markets provide the most cost-effective access** to senior talent.
+
+**Business Impact**: Enables strategic talent acquisition, optimized compensation planning, and data-driven recruitment decisions.
+
+---
+
+## Table of Contents
+
+- [Executive Summary](#executive-summary)
+- [Project Overview](#project-overview)
+- [Dataset Overview](#dataset-overview)
+- [Key Business Insights](#key-business-insights)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Business Applications](#business-applications)
+- [Part A: SQL Business Intelligence Analysis](#part-a-sql-business-intelligence-analysis)
+- [Part B: Tableau Dashboard & Visualizations](#part-b-tableau-dashboard--visualizations)
+- [Interactive Dashboard](#interactive-dashboard)
+
+---
+
+## Project Overview
+
+### Business Context
+The evolving ML/AI job market creates challenges in competitive talent acquisition and strategic compensation planning. This analysis transforms raw salary data into actionable business intelligence for HR professionals, finance teams, and business leaders.
+
+### Project Goal
+Provide data-driven insights for:
+- **Competitive salary benchmarking** across experience levels and markets
+- **Remote work compensation strategy** optimization  
+- **Geographic talent acquisition** cost analysis
+- **2026 recruitment budget planning** based on market trends
+
+---
+
+## Dataset Overview
+
+**Source**: [Kaggle - Salaries for Data Science Jobs](https://www.kaggle.com/datasets/adilshamim8/salaries-for-data-science-jobs/data)
+
+<img width="1856" height="162" alt="image" src="https://github.com/user-attachments/assets/43681ba9-0463-4add-b323-74d74cc6231c" />
+
+**Key Statistics**: 6-year timespan (2020-2025) | 410 unique job titles | Salary range: $15,000 - $800,000 | Average: $157,500 USD
+
+**Data Quality**: Clean dataset requiring no additional processing, ensuring analysis accuracy for business decisions.
+
+---
+
+## Key Business Insights
+
+### Strategic Findings
+- **Remote Premium**: US remote roles pay **70% more** than on-site positions
+- **Career Growth**: Technical roles offer **40%+ salary increases** through progression
+- **Geographic Arbitrage**: Slovakia, Lithuania, and India provide **highest talent value**
+- **Company Size Impact**: Large companies pay **15-25% more** across work arrangements
+
+### Business Recommendations  
+- Leverage geographic differentials for cost-effective hiring
+- Implement region-specific remote compensation adjustments
+- Structure clear progression paths to retain talent
+- Use experience-level benchmarks for budget planning
+
+---
+
+## Skills Demonstrated
+
+### Business Analysis
+- **Strategic Problem Solving**: Custom business metrics development
+- **Data Storytelling**: Complex data transformed into executive insights
+- **Stakeholder Communication**: Cross-departmental analysis framework
+- **Market Research**: Comprehensive competitive analysis
+
+### Technical Competencies
+- **Advanced SQL**: Window functions (e.g. `LEAD()`, `PARTITION BY`), CTEs, complex joins
+- **Data Visualization**: Interactive Tableau dashboards with geographic mapping
+- **Statistical Analysis**: Percentile calculations and distribution analysis
+- **Database Management**: PostgreSQL analytics and business intelligence
+
+---
+
+
+
+---
+
+
+
+
+
+
+
+
+
+# MLAIJobAnalysis
+ML AI Related Job Salary Analysis 2025 Using PostgreSQL &amp; Tableau
 
 Motivation / Background:
 
@@ -22,8 +119,8 @@ This large and diverse dataset gives a broad view of global job trends and pay f
 The dataset downloaded is already clean, so no data cleaning was conducted.
 
 Key Skill Demonstrated:
-Tableau and SQL were used to conduct analysis about this project.
-- Data extraction and transformation in SQL
+Tableau and PostgreSQL were used to conduct analysis about this project.
+- Data extraction and transformation in PostgreSQL
 - Building interactive Tableau dashboards
 - Data-driven storytelling
 - Business recommendations
