@@ -162,11 +162,61 @@ This analysis compares salary differences between remote and on-site positions f
 - **Employment Type Variability**: Contract and part-time roles show wider salary ranges with higher variability than full-time positions
 - **Strategic Focus Areas**: Medium and large full-time positions represent the majority of hiring activity and budget impact
 
-**Source code**: [View complete SQL analysis on GitHub](https://github.com/an0015ng/MLAIJobAnalysis/blob/main/ML%20AI%20Job%20Salary%20PostgreSQL.sql)
+**Part A Source code**: [View complete SQL analysis on GitHub](https://github.com/an0015ng/MLAIJobAnalysis/blob/main/ML%20AI%20Job%20Salary%20PostgreSQL.sql)
 
 ---
 
+# Part B - Tableau Visualizations
 
+## 1. Salary Evolution by Experience Level
+
+A visual overview of salary trends by experience level from 2020 to 2025, showing how the market has evolved across different career stages.
+
+<img width="2250" height="1256" alt="Salary Evolution by Experience Level" src="https://github.com/user-attachments/assets/1b598628-e62a-4942-88b4-4f84c8040507" />
+
+### Key Insights:
+- **Experience premium persists**: Executives/Directors consistently maintain the highest salaries with a significant gap from other levels—reinforcing the SQL findings that showed 40%+ salary jumps when advancing experience levels
+- **Market recovery post-2021**: All experience levels demonstrated steady salary growth with a notable recovery after a brief dip in 2021, indicating overall market resilience
+- **Entry-level growth plateau**: While entry-level positions saw gains over the period, growth momentum slowed in 2025, suggesting potential market saturation at junior levels
+
+## 2. Global Salary Landscape
+
+Geographic breakdown of average salaries for full-time ML/AI roles, highlighting significant regional variations in compensation.
+
+<img width="2266" height="1292" alt="Global Salary Landscape" src="https://github.com/user-attachments/assets/3cd29267-6ea2-409c-b932-c6f000d853db" />
+
+### Key Insights:
+- **Western premium markets**: United States, Canada, Australia, and Western European countries lead with salaries ranging from $120,000 to $164,000, aligning with the SQL analysis that identified geographic arbitrage opportunities
+- **Significant regional gaps**: Emerging markets like India and Brazil show average salaries of $35,000-$45,000, creating substantial cost differentials for global hiring strategies
+- **Quality-filtered data**: Analysis includes only countries with 50+ records to ensure statistical reliability, maintaining data integrity standards throughout the visualization
+
+## 3. Salary Distribution by Top Job Titles
+
+Box-and-whisker analysis of salary ranges across the most common job titles, sorted by median compensation levels.
+
+<img width="1926" height="1056" alt="Salary Distribution by Top Job Titles" src="https://github.com/user-attachments/assets/e3227fb2-6df8-4d10-aa8d-7f2e95d285fb" />
+
+### Key Insights:
+- **Engineering roles dominate**: Machine Learning Engineer, Research Engineer, and Software Engineer command the highest median salaries above $170,000, with salary ranges spanning from $120,000 (25th percentile) to $400,000+ (upper whisker)
+- **Analyst-specialist gap**: Data Analyst and Data Specialist roles cluster around $95,000 median salary, confirming the compensation hierarchy identified in the SQL top roles analysis
+- **Technical premium validated**: Clear evidence that technical engineering and research positions significantly outpace analyst and specialist roles in compensation, supporting strategic career progression insights
+
+## 4. Salary Based on Remote Work and Company Size
+
+Comprehensive view of how work arrangement and company size interact to influence compensation across the ML/AI field.
+
+<img width="1322" height="318" alt="Salary Based on Remote Work and Company Size" src="https://github.com/user-attachments/assets/91bb6bd1-09aa-4a3a-867f-9fa36379f261" />
+
+### Key Insights:
+- **Large company advantage**: On-site roles at large companies offer the highest average salaries, consistent with the SQL cost center analysis showing salary increases with company size
+- **Hybrid work penalty**: Hybrid arrangements consistently pay the least across all company sizes, representing an unexpected finding in the current remote work landscape
+- **Remote work nuances**: Fully remote roles typically outpay hybrid but trail on-site positions, except at mid-sized companies where remote compensation approaches on-site levels—echoing the geographic premium variations found in the SQL remote work analysis
+
+---
+
+**Part B Full interactive dashboard available at:** [Tableau Public](https://public.tableau.com/app/profile/daniel.ang8549/viz/MlAIJobTableau/Dashboard1)
+
+<img width="2960" height="1400" alt="Complete Dashboard Overview" src="https://github.com/user-attachments/assets/44a3064e-30a2-4619-ad27-b9d4f22ac3f5" />
 
 
 
