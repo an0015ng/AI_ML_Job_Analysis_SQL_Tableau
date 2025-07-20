@@ -1,5 +1,4 @@
-# MLAIJobAnalysis
-## ML & AI Job Salary Analysis 2025 | PostgreSQL & Tableau
+# ML & AI Job Salary Analysis 2025 | PostgreSQL & Tableau
 
 ## Executive Summary
 
