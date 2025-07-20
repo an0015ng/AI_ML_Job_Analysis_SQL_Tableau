@@ -1,15 +1,11 @@
 # MLAIJobAnalysis
 ## ML & AI Job Salary Analysis 2025 | PostgreSQL & Tableau
 
----
-
 ## Executive Summary
 
 This project analyzes **140,000+ job records across 96 countries** to uncover actionable salary insights for ML/AI roles from 2020-2025. Key findings reveal that **remote work commands a 70% salary premium** in the US, **career progression offers 40%+ growth potential** for technical roles, and **Eastern European markets provide the most cost-effective access** to senior talent.
 
 **Business Impact**: Enables strategic talent acquisition, optimized compensation planning, and data-driven recruitment decisions.
-
----
 
 ## Table of Contents
 
@@ -18,7 +14,6 @@ This project analyzes **140,000+ job records across 96 countries** to uncover ac
 - [Dataset Overview](#dataset-overview)
 - [Key Business Insights](#key-business-insights)
 - [Skills Demonstrated](#skills-demonstrated)
-- [Business Applications](#business-applications)
 - [Part A: SQL Business Intelligence Analysis](#part-a-sql-business-intelligence-analysis)
 - [Part B: Tableau Dashboard & Visualizations](#part-b-tableau-dashboard--visualizations)
 - [Interactive Dashboard](#interactive-dashboard)
@@ -83,7 +78,91 @@ Provide data-driven insights for:
 
 ---
 
+# Part A - SQL Business Intelligence Analysis
 
+## 1. Career Progression and Salary Growth
+
+This analysis explores how salaries change as people advance through different experience levels and job titles, providing insights into career development potential across the ML/AI field.
+
+### SQL Skills Demonstrated:
+- **Window Functions**: `LEAD()` and `PARTITION BY` to compare salaries across experience levels within the same job title
+- **Conditional Logic**: `CASE` statements for custom ordering of experience levels  
+- **Common Table Expressions (CTEs)**: Structure analysis in clear, reusable steps
+
+<img width="2240" height="638" alt="image" src="https://github.com/user-attachments/assets/40375cd0-cbbe-41d2-b556-5793cfbe5134" />
+
+### Key Insights:
+- **Strong Growth Potential**: Roles like Data Specialist, Engineer, and Research Engineer offer **40% or more** salary jumps when moving up a level
+- **Technical Roles Reward Experience**: Engineering and research positions show especially large salary increases with career progression  
+- **Career Advancement Impact**: Moving up from entry or intermediate levels can make a major difference in long-term earning potential
+
+## 2. Remote Work Premium Analysis
+
+This analysis compares salary differences between remote and on-site positions for Data Analyst roles across different countries, helping understand geographic variations in remote work compensation.
+
+### SQL Skills Demonstrated:
+- **Conditional Aggregation**: Pattern filtering and `WHERE` clause logic to focus on specific job titles across different countries
+- **Statistical Calculations**: Percentage calculations and salary comparisons to identify remote work premiums
+- **Geographic Data Analysis**: Cross-country salary analysis with location-based filtering
+
+<img width="1570" height="566" alt="image" src="https://github.com/user-attachments/assets/5d2ce5bb-1d0d-4e17-8f0b-dfe0cc13ed72" />
+
+### Key Insights:
+- **Significant US Premium**: Remote Data Analyst roles in the United States pay **over 70% higher** than on-site positions
+- **Regional Variations**: UK, Spain, and Canada show smaller but notable remote premiums between **20-32% more** than on-site roles
+- **Market-Dependent Value**: Germany and Austria show minimal difference between remote and on-site compensation
+
+## 3. Salary Planning for Top Roles (2026 Recruitment Budget)
+
+**Business Context**: HR needs to plan recruitment budgets for 2026 and wants to understand average salary expectations for different experience levels in the most commonly hired job titles.
+
+### SQL Skills Demonstrated:
+- **Ranking Operations**: `GROUP BY` and `ORDER BY` to identify top 5 most-hired roles by volume
+- **Multi-dimensional Aggregation**: Complex joins calculating averages, min-max ranges across job titles and experience levels
+- **Statistical Distribution Analysis**: Salary range calculations for realistic budget planning
+
+<img width="472" height="418" alt="image" src="https://github.com/user-attachments/assets/ab9dceaf-0db8-44b4-9d22-7971aef32445" />
+
+<img width="1664" height="640" alt="image" src="https://github.com/user-attachments/assets/d96b5b60-6f41-4854-be04-2c86391ae4c7" />
+
+### Key Insights:
+- **Top Hiring Priorities**: Data Scientist, Software Engineer, Data Engineer, Data Analyst, and Engineer represent the highest volume roles
+- **Experience Level Impact**: Executive/Director level positions command **well above $140,000**, while entry-level roles start **under $60,000**
+- **Wide Salary Ranges**: Data Scientist salaries in the UK range from **under $30,000 up to nearly $720,000** depending on experience
+
+## 4. Talent Availability-to-Cost Ratio Analysis  
+
+**Business Context**: Companies need to identify markets that offer the best value when hiring senior ML/AI talent, balancing talent availability with cost considerations.
+
+### SQL Skills Demonstrated:
+- **Data Type Casting**: `::numeric` and `::float` conversions for precise mathematical calculations
+- **Advanced Mathematical Operations**: Logarithmic normalization and custom ratio calculations for business metrics
+- **Custom Metric Development**: Created value_score combining senior talent percentage, availability, and cost factors
+
+<img width="1796" height="884" alt="image" src="https://github.com/user-attachments/assets/db7626cc-9a07-471b-9fb3-83d8f6bbbce5" />
+
+### Key Insights:
+- **Best Value Markets**: Slovakia, Lithuania, and India provide the most cost-effective access to senior ML/AI talent
+- **High-Cost vs High-Value**: US and UK offer abundant senior talent but at significantly higher cost-per-hire ratios
+- **Eastern European Advantage**: Central/Eastern European countries show high senior professional concentration relative to salary levels
+
+## 5. Cost Center Analysis
+
+**Business Context**: Finance wants to understand salary distribution patterns across company sizes to optimize hiring strategies and budget allocation.
+
+### SQL Skills Demonstrated:
+- **Window Ranking Functions**: `ROW_NUMBER()` and `COUNT() OVER` for advanced row-based calculations
+- **Percentile Distribution Analysis**: Calculated 25th, median, and 75th percentiles using row-based statistical logic
+- **Temporal Data Filtering**: Focused analysis on recent data (2024-2025) using date-based `WHERE` conditions
+
+<img width="1872" height="836" alt="image" src="https://github.com/user-attachments/assets/5c173590-2a37-447f-8c11-633dd81199d0" />
+
+### Key Insights:
+- **Company Size Premium**: Median full-time salaries consistently increase with company size - large companies offer the highest compensation
+- **Employment Type Variability**: Contract and part-time roles show wider salary ranges with higher variability than full-time positions
+- **Strategic Focus Areas**: Medium and large full-time positions represent the majority of hiring activity and budget impact
+
+**Source code**: [View complete SQL analysis on GitHub](https://github.com/an0015ng/MLAIJobAnalysis/blob/main/ML%20AI%20Job%20Salary%20PostgreSQL.sql)
 
 ---
 
