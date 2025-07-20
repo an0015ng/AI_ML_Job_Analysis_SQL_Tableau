@@ -64,16 +64,15 @@ Provide data-driven insights for:
 ## Skills Demonstrated
 
 ### Business Analysis
-- **Strategic Problem Solving**: Custom business metrics development
-- **Data Storytelling**: Complex data transformed into executive insights
-- **Stakeholder Communication**: Cross-departmental analysis framework
-- **Market Research**: Comprehensive competitive analysis
+- **Strategic Problem Solving:** Created original business metrics (ex: talent value ratio) for actionable market insights.
+- **Data Storytelling:** Distilled 140,000+ job records into executive-ready hiring trend summaries.
+- **Stakeholder Communication:** Structured findings to support HR and finance business cases.
 
 ### Technical Competencies
-- **Advanced SQL**: Window functions (e.g. `LEAD()`, `PARTITION BY`), CTEs, complex joins
-- **Data Visualization**: Interactive Tableau dashboards with geographic mapping
-- **Statistical Analysis**: Percentile calculations and distribution analysis
-- **Database Management**: PostgreSQL analytics and business intelligence
+- **Advanced SQL:** Applied window functions, aggregations, and multi-CTE structures on large datasets.
+- **Tableau Visualization:** Developed interactive dashboards with geographic and role-based analytics.
+- **Statistical Techniques:** Used percentile, quartile, and distribution analysis for compensation benchmarking.
+- **PostgreSQL Optimization:** Designed efficient queries for business intelligence reporting.
 
 ---
 
