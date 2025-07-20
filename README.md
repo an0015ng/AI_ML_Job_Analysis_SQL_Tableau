@@ -16,7 +16,7 @@ This project analyzes **140,000+ job records across 96 countries** to uncover ac
 - [Skills Demonstrated](#skills-demonstrated)
 - [Part A: SQL Business Intelligence Analysis](#part-a-sql-business-intelligence-analysis)
 - [Part B: Tableau Dashboard & Visualizations](#part-b-tableau-dashboard--visualizations)
-- [Interactive Dashboard](#interactive-dashboard)
+- [Conclusion & Next Steps](#conclusion--next-steps)
 
 ---
 
@@ -230,5 +230,5 @@ This project provides a comprehensive view of global ML/AI salary trends by leve
 - Expand analysis to include more granular industries or emerging job titles
 - Build automated pipelines for regular dashboard updates
 
-If you have feedback, questions, or would like to discuss how this framework can be adapted for your organization, please [contact me](mailto:an0015ng@gmail.com). For more projects, visit my [GitHub]((https://github.com/an0015ng)).
+If you have feedback, questions, or would like to discuss how this framework can be adapted for your organization, please [contact me](mailto:an0015ng@gmail.com). For more projects, visit my [GitHub](https://github.com/an0015ng) page.
 
